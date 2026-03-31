@@ -38,3 +38,11 @@ void input() {
     cout << "Masukkan bilangan: ";
     cin >> n;
 } 
+
+// Prosedur output hasil prima
+void outputPrima() {
+    if (cekPrima(n))
+        cout << n << " adalah bilangan PRIMA" << endl;
+    else
+        cout << n << " bukan bilangan PRIMA" << endl;
+}
