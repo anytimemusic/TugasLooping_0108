@@ -16,4 +16,4 @@ bool cekPrima(int x) {
         i++;
     }
     return true;
-}
+} 
