@@ -45,4 +45,4 @@ void outputPrima() {
         cout << n << " adalah bilangan PRIMA" << endl;
     else
         cout << n << " bukan bilangan PRIMA" << endl;
-}
+} 
