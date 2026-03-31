@@ -31,4 +31,10 @@ bool cekFibonacci(int x) {
         b = c;
     }
     return false;
-} 
+}
+
+// Prosedur input
+void input() {
+    cout << "Masukkan bilangan: ";
+    cin >> n;
+}
