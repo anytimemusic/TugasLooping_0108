@@ -64,3 +64,47 @@ void menu() {
     cout << "Pilih menu: ";
     cin >> pilihan;
 }
+
+// Prosedur output hasil Fibonacci
+void outputFibonacci() {
+    if (cekFibonacci(n))
+        cout << n << " adalah bilangan FIBONACCI" << endl;
+    else
+        cout << n << " bukan bilangan FIBONACCI" << endl;
+}
+
+// Function menu
+void menu() {
+    cout << "\n=== MENU PROGRAM ===" << endl;
+    cout << "1. Cek Bilangan Prima" << endl;
+    cout << "2. Cek Bilangan Fibonacci" << endl;
+    cout << "0. Keluar" << endl;
+    cout << "Pilih menu: ";
+    cin >> pilihan;
+}
+
+// Main program
+int main() {
+    while (true) {
+        menu();
+
+        switch (pilihan) {
+            case 1:
+                input();
+                outputPrima();
+                break;
+
+            case 2:
+                input();
+                outputFibonacci();
+                break;
+
+            case 0:
+                cout << "Program selesai. Terima kasih!" << endl;
+                return 0;
+
+            default:
+                cout << "Pilihan tidak valid!" << endl;
+        }
+    }
+}
