@@ -45,4 +45,22 @@ void outputPrima() {
         cout << n << " adalah bilangan PRIMA" << endl;
     else
         cout << n << " bukan bilangan PRIMA" << endl;
+}
+
+// Prosedur output hasil Fibonacci
+void outputFibonacci() {
+    if (cekFibonacci(n))
+        cout << n << " adalah bilangan FIBONACCI" << endl;
+    else
+        cout << n << " bukan bilangan FIBONACCI" << endl;
+}
+
+// Function menu
+void menu() {
+    cout << "\n=== MENU PROGRAM ===" << endl;
+    cout << "1. Cek Bilangan Prima" << endl;
+    cout << "2. Cek Bilangan Fibonacci" << endl;
+    cout << "0. Keluar" << endl;
+    cout << "Pilih menu: ";
+    cin >> pilihan;
 } 
